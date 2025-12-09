@@ -1,10 +1,9 @@
 #!/bin/bash
-# Script 2: Calls the emulator only specifying the VFS path.
+# Script 1: Run the emulator with a minimal VFS in interactive mode.
 
-echo "--- Running Test 2: VFS Path Only (Interactive Mode) ---"
+echo "--- Running Test 1: Minimal VFS (vfs_minimal.b64) in interactive mode ---"
 
-# Call the Python emulator with only the VFS path
-python shell_emulator.py \
-    --vfs-path /my/custom/storage/area
+python3 shell_emulator.py \
+    --vfs-data-path ./vfs_minimal.b64
 
-echo "--- Test 2 Completed (Emulator is now waiting for interactive input) ---"
+echo "--- Test 1 completed ---"

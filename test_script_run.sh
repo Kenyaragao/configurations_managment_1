@@ -1,11 +1,11 @@
 #!/bin/bash
-# Script 1: Calls the emulator and runs the commands.sh file.
+# Script 1: Run the emulator with a deep VFS and the commands.sh startup script.
 
-echo "--- Running Test 1: Startup Script Execution ---"
+echo "--- Running Test 1: Deep VFS with startup script (commands.sh) ---"
 
 # Call the Python emulator with both parameters
-python shell_emulator.py \
-    --vfs-path /custom/vfs/location \
+python3 shell_emulator.py \
+    --vfs-data-path ./vfs_deep.b64 \
     --startup-script ./commands.sh
 
-echo "--- Test 1 Completed ---"
+echo "--- Test 1 completed ---"
